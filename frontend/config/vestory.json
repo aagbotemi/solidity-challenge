@@ -1,0 +1,235 @@
+[
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_stakeholderAddress",
+                "type": "address"
+            }
+        ],
+        "name": "claimTokens",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getContractERC20Balance",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_beneficiary",
+                "type": "address"
+            }
+        ],
+        "name": "isWhitelisted",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "organizations",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "adminAddress",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+            }
+        ],
+        "name": "registerOrganization",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_orgName",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_stakeholderType",
+                "type": "string"
+            },
+            {
+                "internalType": "uint40",
+                "name": "_vestingPeriod",
+                "type": "uint40"
+            }
+        ],
+        "name": "setVestingPeriod",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "stakeholders",
+        "outputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "tokenAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "stakeholderAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "stakeholderType",
+                "type": "string"
+            },
+            {
+                "internalType": "uint40",
+                "name": "vestingPeriod",
+                "type": "uint40"
+            },
+            {
+                "internalType": "uint256",
+                "name": "startTime",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "whitelisted",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint256",
+                "name": "vestedAmount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "orgName",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "tokenAddress",
+                "type": "address"
+            }
+        ],
+        "name": "transferFromContract",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_orgName",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "_stakeholderAddress",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "_stakeholderType",
+                "type": "string"
+            },
+            {
+                "internalType": "bool",
+                "name": "whitelist",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint256",
+                "name": "vestedAmount",
+                "type": "uint256"
+            }
+        ],
+        "name": "whitelistStakeHolderAddress",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
