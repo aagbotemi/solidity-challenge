@@ -44,8 +44,9 @@ contract Vesting {
         address tokenAddress
     ) external onlyOwner {
         require(
-            organizations[msg.sender].adminAddress == address(0),
-            "Organization already registered"
+            keccak256(abi.encodePacked(name)) !=
+                keccak256(abi.encodePacked(organizations[msg.sender].name)),
+            "Organization is registered already"
         );
         organizations[msg.sender] = Organization(
             name,
