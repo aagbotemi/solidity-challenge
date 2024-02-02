@@ -1,0 +1,3 @@
+[submodule "storage-victim/lib/forge-std"]
+	path = storage-victim/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
