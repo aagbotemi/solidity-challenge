@@ -1,8 +1,8 @@
 # Project Title
-Insure.
+Secure.
 
 # Description
-This is an insurance decentralized application.
+This is an decentralized application where smart contract is tested using Slither and audit report was written.
 
 # Getting Started
 Installing
